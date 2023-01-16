@@ -1,0 +1,168 @@
+body{
+    background-color: black;
+}
+
+#navbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 1px solid;
+    /* border-color: black black rgb(51, 50, 50) black; */
+}
+#ytlogo{
+    margin-left: 30px;
+    margin-right: 5px;
+    height: 25px;
+}
+#navbar p{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#search{
+    margin-left: 10%;
+    border-radius: 20px 0px 0px 20px;
+    height: 12px;
+    width: 60%;
+    padding: 15px;
+    text-align: start;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: black;
+    border: 2px solid rgb(51, 50, 50);
+}
+#searchbtn{
+    height: 46px;
+    width: 60px;
+    margin-right: 25%;
+    border-radius: 0px 20px 20px 0px;
+    text-decoration: none;
+    border: none;
+    background-color: black;
+    border: 2px solid rgb(51, 50, 50);
+}
+#searchbtn img{
+    height: 20px
+}
+
+
+
+
+
+
+
+/* main container */
+
+#main_container{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white; */
+}
+
+
+
+
+
+
+/* container 1 */
+
+#container_1{
+    width: 900px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    /* border: 1px solid yellow; */
+}
+
+
+
+
+
+
+
+
+/* container 2 */
+
+#container_2{
+    width: 450px;
+    /* border: 1px solid red; */
+}
+
+
+
+/* iframe */
+
+#iframe{
+    margin: auto;
+    height: 480px;
+    width: 852px;
+    border: transparent;
+    box-shadow: 0px 0px 80px rgba(254, 255, 255, 0.338);
+}
+
+#title{
+    margin-left: -55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* container 2 */
+
+.box{
+    height: 100px;
+    width: 447px;
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+.video{
+    height: 100px;
+    width: 165px;
+    border-radius: 15px;
+    /* border: 1px solid yellow; */
+}
+
+.textBox{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid green; */
+}
+
+.title{
+    margin: auto;
+    height: 60px;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.channel{
+    margin: auto;
+    height: 30px;
+    width: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    line-height: 1.9rem;
+    /* border: 1px solid red; */
+}
+

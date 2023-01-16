@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
     <title>Document</title>
     <style>
-        #iframe{
-            margin: auto;
-            height: 500px;
-            width: 900px;
-        }
+        
     </style>
 </head>
 <body>
-    <iframe id="iframe"></iframe>
-    <h1 id="title"></h1>
+
+    <div id="navbar">
+        <img id="ytlogo" src="youtube_logo.png" alt="">
+        <p>YouTube</p>
+        <input type="text" id="search" placeholder="Search">
+        <button id="searchbtn" onclick="search()"><img src="search_icon.png" alt=""></button>
+    </div>
+
+    <div id="main_container">
+
+        <div id="container_1">
+            <iframe id="iframe"></iframe>
+            <h1 id="title"></h1>
+        </div>
+
+        <div id="container_2">
+            <!-- <div class="box">
+                <div class="video"></div>
+                <div class="textBox">
+                    <p class="title">Varisu - Official Trailer | Thalapathy Vijay | Rashmika | Vamshi Paidipally | Dil Raju | S.Thaman</p>
+                    <p class="channel">Sun Tv</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
 </body>
 </html>
 <script src="video.js"></script>

@@ -48,20 +48,159 @@ body{
 #searchbtn img{
     height: 20px
 }
+
+/* main container */
+
+#main_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid white; */
+}
+
+
+
+
+
+
+
+/* options container */
+
+#options_container{
+    width: 225px;
+    /* border: 1px solid yellowgreen; */
+}
+
+/* opt_1 */
+
+#opt_1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #272727;
+}
+
+#opt_1 > div{
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.5;
+    /* border: 1px solid rgb(88, 87, 87); */
+}
+
+#opt_1 > div:hover{
+    cursor: pointer;
+    background-color: #272727;
+}
+
+
+/* opt_2 */
+
+#opt_2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #272727;
+}
+
+#opt_2 > div{
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    line-height: 2.8;
+    /* border: 1px solid rgb(79, 78, 78); */
+}
+
+#opt_2 > div:hover{
+    cursor: pointer;
+    background-color: #272727;
+}
+
+
+
+
+
+/* display grid*/
+
 #displayGrid{
+    width: 1110px;
     display: grid;
     grid-template-columns: repeat(4, 20%);
-    grid-gap: 5%;
-    justify-content: center;
-    border: 1px solid black;
+    grid-gap: 20px;
+    justify-content: space-evenly;
     background-color: black;
+    /* border: 1px solid yellow; */
+}
+
+#box{
+    margin: auto;
+    margin-left: -15px;
+    margin-top: 15px;
+    height: 210px;
+    width: 255px;
+    
+    /* border: 1px solid white; */
 }
 
 #vdothumbnails{
-    height: 100%;
-    width: 100%;
+    margin: auto;
+    height: 190px;
+    width: 255px;
+    /* border: 1px solid green; */
+    
 }
 
-#displayGrid p{
+.crop{
+    height: 142px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.crop > #vdothumbnails{
+    margin-top: -25px;
+    margin-left: -1px;
+}
+
+.titleBox{
+    /* border: 1px solid yellow; */
+}
+
+.titleBox > p{
+    margin: 8px 10px 8px 10px;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.channelBox{
+    height: 32px;
+    /* border: 1px solid yellow; */
+}
+
+.channelBox > p{
+    margin-left: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
 }
