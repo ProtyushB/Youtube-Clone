@@ -9,9 +9,9 @@ const search = async ()=>{
     try{
         const query = document.querySelector("#search").value;
 
-        const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=latest movies trailer&key=${api2}`);
+        //const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=latest movies trailer&key=${api2}`);
 
-        //const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&q=${query}&key=${api2}`);
+        const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&q=${query}&key=${api2}`);
 
         const data = await res.json();
 
@@ -29,6 +29,7 @@ const search = async ()=>{
 }
 
 const display = (videos)=>{
+    //console.log(videos);
     displayGrid.innerHTML=null;
 
     videos.forEach(({id:{videoId},snippet:{title},snippet:{channelTitle},snippet:{thumbnails:{high:{url}}}})=>{
@@ -46,6 +47,8 @@ const display = (videos)=>{
 
         vdothumbnails.src=url;
         vdothumbnails.addEventListener("click",function (){
+            //console.log(videos);
+            localStorage.setItem("AllVideos",JSON.stringify(videos));
             openVideo(videoId,title);
         })
 

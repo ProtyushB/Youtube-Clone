@@ -9,7 +9,7 @@ body{
     align-items: center;
     background-color: black;
     border: 1px solid;
-    /* border-color: black black rgb(51, 50, 50) black; */
+    border-color: black black rgb(51, 50, 50) black;
 }
 #ytlogo{
     margin-left: 30px;
@@ -71,24 +71,10 @@ body{
 
 #container_1{
     width: 900px;
-    overflow: hidden;
+    overflow: visible;
     text-align: center;
     align-items: center;
     /* border: 1px solid yellow; */
-}
-
-
-
-
-
-
-
-
-/* container 2 */
-
-#container_2{
-    width: 450px;
-    /* border: 1px solid red; */
 }
 
 
@@ -97,6 +83,7 @@ body{
 
 #iframe{
     margin: auto;
+    margin-top: 25px;
     height: 480px;
     width: 852px;
     border: transparent;
@@ -115,22 +102,39 @@ body{
 
 
 
-
-
-
-
 /* container 2 */
 
+#container_2{
+    height: 600px;
+    width: 450px;
+    overflow: auto;
+    /* border: 1px solid red; */
+}
+
+
+
 .box{
+    margin-bottom: 6px;
     height: 100px;
-    width: 447px;
+    width: 99%;
     display: flex;
     /* border: 1px solid white; */
 }
 
-.video{
+.videoBox{
     height: 100px;
     width: 165px;
+    border-radius: 15px;
+    overflow: hidden;
+    /* border: 1px solid violet; */
+}
+
+.video{
+    margin-top: -17px;
+    margin-bottom: -16px;
+    
+    height: 135px;
+    width: 100%;
     border-radius: 15px;
     /* border: 1px solid yellow; */
 }
