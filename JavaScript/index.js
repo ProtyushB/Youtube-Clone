@@ -1,8 +1,8 @@
 // url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&key=[YOUR_API_KEY]`;
 
-const api_key1 = "AIzaSyCEKIveCHhT1jRF8JNAzUCoIO2zLMyrAWQ";     //new
-
-const api_key2 = "AIzaSyDVrwRg6fqfddY2sAScEZ00ztBh896slAA";    //old
+/* const api_key1 = "AIzaSyCEKIveCHhT1jRF8JNAzUCoIO2zLMyrAWQ";     //new*/
+ 
+/* const api_key2 = "AIzaSyDVrwRg6fqfddY2sAScEZ00ztBh896slAA";    //old */
 
 const displayGrid = document.querySelector("#displayGrid");
 
