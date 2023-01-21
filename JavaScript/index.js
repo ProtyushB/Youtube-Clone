@@ -11,6 +11,8 @@ const search = async ()=>{
     try{
         const query = document.querySelector("#search").value;
 
+        console.log(query);
+
         //const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=latest movies trailer&key=${api_key1}`);
 
         const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${query}&key=${api_key1}`);
@@ -21,7 +23,8 @@ const search = async ()=>{
 
         console.log(data);
         //localStorage.setItem("YouTubeData",JSON.stringify(data.items));
-        display(data.items);
+        localStorage.setItem("Videos", JSON.stringify(data.items));
+        display();
 
         //localStorage.setItem("YouTubeData", JSON.stringify(data))
         //display(data);
@@ -30,7 +33,9 @@ const search = async ()=>{
     }
 }
 
-const display = (videos)=>{
+const display = ()=>{
+
+    let videos = JSON.parse(localStorage.getItem("Videos"));
     
     //console.log(videos);
     displayGrid.innerHTML=null;
