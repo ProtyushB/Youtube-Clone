@@ -6,6 +6,7 @@ const api2 = `AIzaSyA9RHkwQV3giaxJ97ylwDk1xVr6jCpsdvU`;
 const displayGrid = document.querySelector("#displayGrid");
 
 const search = async ()=>{
+    
     try{
         const query = document.querySelector("#search").value;
 
@@ -29,6 +30,7 @@ const search = async ()=>{
 }
 
 const display = (videos)=>{
+    
     //console.log(videos);
     displayGrid.innerHTML=null;
 
