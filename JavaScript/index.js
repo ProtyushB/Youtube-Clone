@@ -1,8 +1,5 @@
 // url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&key=[YOUR_API_KEY]`;
 
-/* const api_key1 = "AIzaSyCEKIveCHhT1jRF8JNAzUCoIO2zLMyrAWQ";     //new*/
- 
-/* const api_key2 = "AIzaSyDVrwRg6fqfddY2sAScEZ00ztBh896slAA";    //old */
 
 const displayGrid = document.querySelector("#displayGrid");
 
@@ -15,7 +12,7 @@ const search = async ()=>{
 
         //const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=latest movies trailer&key=${api_key1}`);
 
-        const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${query}&key=${api_key1}`);
+        const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=12&q=${query}&key=$AIzaSyCSbz6Rxz4juGXvxTDaYUIs25OgsrcLMT4`);
 
         const data = await res.json();
 
